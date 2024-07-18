@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Customer Transactions App</h1>
+
+    <div id="filterForm">
+        <label for="filterNameInput">Filter by Customer Name:</label>
+        <input type="text" id="filterNameInput" placeholder="Enter customer name...">
+        <label for="filterAmountInput">Filter by Transaction Amount:</label>
+        <input type="text" id="filterAmountInput" placeholder="Enter amount...">
+    </div>
+
+    <div id="customerTable">
+        <h2>Customer Table</h2>
+        <table id="customerTableBody">
+        
+        </table>
+    </div>
+
+    <div id="transactionChart">
+        <h2 id="chartTitle">Transaction Chart</h2>
+
+
+        <label for="customerId">Select Customer:</label>
+        <select id="customerId">
+            <option value="1">Ahmed Ali</option>
+            <option value="2">Aya Elsayed</option>
+            <option value="3">Mina Adel</option>
+            <option value="4">Sarah Reda</option>
+            <option value="5">Mohamed Sayed</option>
+        </select>
+    
+        <canvas id="myChart" width="600" height="300"></canvas>
+    
+        <script src="script.js"></script>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
